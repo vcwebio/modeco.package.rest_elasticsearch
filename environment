@@ -1,0 +1,14 @@
+#!/usr/bin/env bash
+
+export CONTECO_LABEL="package.rest_elasticsearch - ModEco"
+export CONTECO_DESCRIPTION="The Modeco ElasticSearch REST API client package."
+
+export CONTECO_TYPE="package"
+export CONTECO_NAME="rest_elasticsearch"
+export CONTECO_TAG="v1.0.0"
+
+
+export CONTECO_BASE="image.wrapper"
+export CONTECO_BUILD="modeco"
+
+export MODECO_PACKAGE_UPDATE="latest"
