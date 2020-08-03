@@ -7,3 +7,7 @@ if [[ "package_rest_elasticsearch_rest_elasticsearch_rest_elasticsearch_data_vol
 	executionplane --silent docker volume create package_rest_elasticsearch_rest_elasticsearch_rest_elasticsearch_data_volume
 	fi
 	
+if [[ "package_rest_elasticsearch_rest_elasticsearch_rest_elasticsearch_data_volume" == "$prefix"* ]] ; then
+			executionplane --silent docker run -v package_rest_elasticsearch_rest_elasticsearch_rest_elasticsearch_data_volume:/conteco/pwd ${CONTECO_REGISTRY}$1 --interactive cp -r /modeco/volumes/rest_elasticsearch_rest_elasticsearch_data_volume/* /conteco/pwd
+		fi
+		
